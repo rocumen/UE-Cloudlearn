@@ -115,6 +115,17 @@
   *::after {
     border-color: var(--border-hairline);
   }
+
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: none;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
 }
 
 .apple-transition {

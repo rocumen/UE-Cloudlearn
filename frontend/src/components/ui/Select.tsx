@@ -43,7 +43,7 @@ export function Select({
           aria-invalid={Boolean(error) || undefined}
           aria-describedby={describedBy}
           className={[
-            'w-full min-h-[48px] appearance-none rounded-[12px] bg-surface border pl-3.5 pr-11 text-[1rem] text-primary',
+            'w-full min-h-[48px] appearance-none [-webkit-appearance:none] [-moz-appearance:none] bg-none truncate rounded-[12px] bg-surface border pl-3.5 pr-11 text-[1rem] text-primary',
             'apple-transition apple-focus-ring',
             error ? 'border-status-error-fg' : 'border-hairline',
             'disabled:opacity-60 disabled:cursor-not-allowed',
