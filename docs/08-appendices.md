@@ -107,23 +107,27 @@ UE-Cloudlearn/
 
 ### Development Progression & Feature Commit Summary
 
-| Engineering Stage | Repository Scope Delivered | Primary Owner(s) |
-|---|---|---|
-| **Repository & Security Setup** | `.gitignore`, sanitized `.env.example`, directory layout, and `README.md` | Mark Bautista, Mark Costin |
-| **Database Schema & Sample SQL** | `database/schema.sql` (6 InnoDB tables), idempotent `seed.sql`, and Chapter 4.4 `sample_queries.sql` | Mark Cyron Feratero |
-| **Backend Core, Auth & RBAC** | Express ESM API scaffold, `mysql2/promise` pool, JWT `HttpOnly` auth, RBAC middleware, Admin Users CRUD, `seed-passwords.js` | Zac Dacquel |
-| **LMS Domain APIs & S3 Service** | Courses, Enrollments, Materials, Assignments, Submissions, Grading, Records SQL `JOIN`s, `s3.js` presigner, `multer` 15 MB upload validation | Zac Dacquel, Ryan Palacios |
-| **Automated Backend Test Suite** | `mockDb.js`, `mockStorage.js`, and 8 Vitest + Supertest integration suites (`27/27` passing tests) | Zac Dacquel, Reynald Ocumen |
-| **Frontend Design Tokens & Core UI** | `tokens.css` (Light/Dark UE Crimson palette), `api.ts`, `AuthContext`, `ThemeContext`, `AppShell`, 13 UI primitives, `LoginPage`, `RegisterPage`, `DashboardPage` | Isabel Lopez |
-| **Full LMS Frontend Screens** | `CoursesPage`, `CourseDetailPage` (Materials/Assignments/Students tabs), `SubmissionsPage`, `RecordsPage`, `UsersPage`, 15-point accessibility audit | Isabel Lopez |
-| **Cloud Infra & Deployment Scripts** | `infra/iam/` policies, `infra/nginx/ue-cloudlearn.conf`, `infra/pm2/ecosystem.config.cjs`, `ec2-bootstrap.sh`, `deploy.sh`, `verify-live.sh`, Free Tier runbook | Mark Bautista, Ryan Palacios, Reynald Ocumen |
-| **Live AWS Provisioning & E2E Check** | Provisioned VPC, 3 subnets, IGW, Route Tables, Security Groups, Private RDS, Private S3, IAM Role, EC2 (`ap-southeast-1`), live E2E tests | Mark Bautista, Reynald Ocumen, Ryan Palacios, Mark Cyron Feratero |
-| **Formal UE Docs & Study Packets** | Chapters 1–6, Preliminary Pages, APA 7th References, Appendices A–F (23 live screenshots), and 7 individualized study packets | All 7 Members (QA Lead: Reynald Ocumen) |
+The live `main` branch on `https://github.com/rocumen/UE-Cloudlearn` preserves a clean 7-commit engineering history covering environment hygiene, relational database scripts, backend Express APIs and Vitest tests, React/TypeScript frontend modules, AWS infrastructure scripts/runbooks, and complete formal UE CCS4301 documentation:
 
-### Post-Push GitHub Screenshots Checklist
+| Commit | Commit Message | Repository Scope Delivered | Primary Owner(s) |
+|---|---|---|---|
+| `fe77831` | `Initial commit` | Repository initialization on GitHub (`main` branch) | Mark Bautista, Reynald Ocumen |
+| `0ccd64c` | `chore: add gitignore, environment template, and project README` | `.gitignore`, sanitized `.env.example`, directory layout, and `README.md` | Mark Bautista, Mark Costin |
+| `df38f33` | `feat(database): add MySQL 8.0 relational schema, seed data, and sample SQL queries` | `database/schema.sql` (6 InnoDB tables), idempotent `seed.sql`, and Chapter 4.4 `sample_queries.sql` | Mark Cyron Feratero |
+| `2f15674` | `feat(backend): implement Express REST API, JWT RBAC, parameterized SQL, S3 storage, and Vitest suite` | Express ESM API scaffold, `mysql2/promise` pool, JWT `HttpOnly` auth, RBAC middleware, S3 presigner, `multer` upload validation, `mockDb.js`, `mockStorage.js`, and 8 Vitest + Supertest suites (`27/27` passing tests) | Zac Dacquel, Ryan Palacios, Reynald Ocumen |
+| `19bf3e1` | `feat(frontend): build React TypeScript Tailwind UI with UE Crimson design system and LMS workflows` | `tokens.css` (Light/Dark UE Crimson palette), `api.ts`, `AuthContext`, `ThemeContext`, `AppShell`, 13 UI primitives, and all 8 LMS pages | Isabel Lopez |
+| `b58ed67` | `chore(infra): add AWS IAM policies, Nginx reverse proxy, PM2 config, EC2 scripts, and runbook` | `infra/iam/` policies, `infra/nginx/ue-cloudlearn.conf`, `infra/pm2/ecosystem.config.cjs`, `ec2-bootstrap.sh`, `deploy.sh`, `verify-live.sh`, and Free Tier runbook | Mark Bautista, Ryan Palacios, Reynald Ocumen |
+| `fd2e9ce` | `docs: add formal UE CCS4301 technical documentation, live screenshots, and team study guides` | Preliminary pages, Chapters 1–6, APA 7th references, Appendices A–F, live app/AWS screenshots, and 7 individualized study packets | All 7 Members (QA Lead: Reynald Ocumen) |
 
-- [ ] `[INSERT CAPTURED SCREENSHOT AFTER GITHUB PUSH: docs/screenshots/github-01-repo-structure.png]` — Top-level repository tree and `README.md` on `https://github.com/rocumen/UE-Cloudlearn`.
-- [ ] `[INSERT CAPTURED SCREENSHOT AFTER GITHUB PUSH: docs/screenshots/github-02-commits.png]` — GitHub **Commits** / **Contributors** view confirming commits across the project timeline.
+### Master GitHub Repository Screenshot Index and Checklist
+
+| # | Status | File Path (`docs/screenshots/`) | Paper Figure(s) | GitHub View Demonstrated |
+|---|---|---|---|---|
+| 1 | [x] Captured | `github-01-repo-structure.png` | Figure 3.13 | Top-level repository tree and `README.md` on `https://github.com/rocumen/UE-Cloudlearn` |
+| 2 | [x] Captured | `github-02-commits.png` | Figure 3.14 | GitHub **Commits** view (`fe77831` through `fd2e9ce`) confirming structured milestone progression |
+
+![B.1 GitHub Repository Structure](screenshots/github-01-repo-structure.png)
+![B.2 GitHub Commit History](screenshots/github-02-commits.png)
 
 ---
 
@@ -326,6 +330,6 @@ module.exports = {
 ### F.5 UE CCS4301 Formal Word and PDF Export Checklist
 
 - [ ] Fill in the official assigned Group Number on all `________` blank lines on the Title Page and Approval Sheet.
-- [ ] Push final repository state to `https://github.com/rocumen/UE-Cloudlearn` and insert `github-01-repo-structure.png` and `github-02-commits.png` in Chapter 3.6 / Appendix B.
+- [x] Push final repository state to `https://github.com/rocumen/UE-Cloudlearn` and insert `github-01-repo-structure.png` and `github-02-commits.png` in Chapter 3.6 / Appendix B.
 - [ ] Apply Microsoft Word page setup: **A4** paper size, **Times New Roman 12pt** body text (`14pt–16pt` bold headings), **1.5 line spacing**, justified paragraph alignment, **1.5-inch left margin** (binding side) and **1.0-inch** top, bottom, and right margins, and page numbering at bottom-right.
 - [ ] Export compiled documentation for soft-bound printing and submit digital PDF named `<GroupNumber>_UECloudlearn_AWSFinalProject.pdf`.

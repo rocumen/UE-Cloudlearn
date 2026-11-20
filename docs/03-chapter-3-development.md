@@ -254,12 +254,12 @@ All project source code, SQL scripts, AWS infrastructure runbooks, documentation
 | `docs/` | Preliminary pages, Chapters 1–6, APA 7th references, Appendices A–F, `screenshots/` | All 7 Members (QA Lead: Reynald Ocumen) |
 | `team-docs/` | Shared master study guide and 7 individualized presentation packets | All 7 Members |
 
-Development progressed through structured, modular engineering commits verified by automated test suites, static TypeScript and UI accessibility checks, and live AWS cloud deployment checks before merging to `main`. Figures 3.13 and 3.14 are reserved for the live GitHub web interface captures immediately following the final repository push.
+Development progressed through structured, modular engineering commits verified by automated test suites, static TypeScript and UI accessibility checks, and live AWS cloud deployment checks before merging to `main`. Figures 3.13 and 3.14 show the live GitHub repository structure and commit history on the `main` branch at `https://github.com/rocumen/UE-Cloudlearn`.
 
-[INSERT CAPTURED SCREENSHOT AFTER GITHUB PUSH: docs/screenshots/github-01-repo-structure.png]
+![Figure 3.13: GitHub Repository Structure Overview (https://github.com/rocumen/UE-Cloudlearn)](screenshots/github-01-repo-structure.png)
 
 *Figure 3.13: GitHub Repository Structure Overview (`https://github.com/rocumen/UE-Cloudlearn`).*
 
-[INSERT CAPTURED SCREENSHOT AFTER GITHUB PUSH: docs/screenshots/github-02-commits.png]
+![Figure 3.14: GitHub Commit History and Milestone Verification Log](screenshots/github-02-commits.png)
 
 *Figure 3.14: GitHub Commit History and Milestone Verification Log.*

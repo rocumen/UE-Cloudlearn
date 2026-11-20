@@ -177,8 +177,8 @@ Network and identity boundaries isolate EC2 inside a public subnet (`10.0.1.0/24
 | **Figure 3.10** | Student Overview Dashboard with Upcoming Assignments and Recent Grades | `docs/03-chapter-3-development.md` |
 | **Figure 3.11** | Student Consolidated Learning Records Powered by Multi-Table SQL `JOIN` | `docs/03-chapter-3-development.md` |
 | **Figure 3.12** | JWT Cookie Authentication and Role-Based Access Control (RBAC) Sequence Diagram | `docs/03-chapter-3-development.md` |
-| **Figure 3.13** | GitHub Repository Structure Overview (`https://github.com/rocumen/UE-Cloudlearn`) *(Post-Push Placeholder)* | `docs/03-chapter-3-development.md` |
-| **Figure 3.14** | GitHub Commit History and Milestone Verification Log *(Post-Push Placeholder)* | `docs/03-chapter-3-development.md` |
+| **Figure 3.13** | GitHub Repository Structure Overview (`https://github.com/rocumen/UE-Cloudlearn`) | `docs/03-chapter-3-development.md` |
+| **Figure 3.14** | GitHub Commit History and Milestone Verification Log | `docs/03-chapter-3-development.md` |
 | **Figure 4.1** | Amazon RDS for MySQL 8.0.46 Instance (`ue-cloudlearn-db`) Summary in AWS Console | `docs/04-chapter-4-database.md` |
 | **Figure 4.2** | Live Relational Data Verification — Enrolled Students Roster Retrieved from Amazon RDS | `docs/04-chapter-4-database.md` |
 | **Figure 4.3** | Live Multi-Table `JOIN` Verification — Consolidated Student Learning Records Retrieved from Amazon RDS | `docs/04-chapter-4-database.md` |

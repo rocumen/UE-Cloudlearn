@@ -25,7 +25,7 @@
 - [x] `.gitignore`, `.env.example`, `README.md`, `infra/nginx/ue-cloudlearn.conf`, `infra/pm2/ecosystem.config.cjs`.
 - [x] `infra/scripts/{ec2-bootstrap.sh,deploy.sh,verify-live.sh}` verified with strict LF line endings (`100755` executable mode in Git).
 - [x] Live EC2 deployment verified on Ubuntu 24.04 (`pm2-ubuntu` enabled, Nginx active, `verify-live.sh` passed all 5 live checks).
-- [x] Captured live EC2 Console screenshots (`aws-08-ec2-instance.png`, `aws-09-ec2-security.png`).
+- [x] Captured live EC2 Console screenshots (`aws-08-ec2-instance.png`, `aws-09-ec2-security.png`) and GitHub repository screenshots (`github-01-repo-structure.png`, `github-02-commits.png`).
 
 ## 4. Your Live Presentation Script (Part 2 — EC2, Nginx/PM2 & GitHub Demo, 3–4 mins)
 
@@ -60,4 +60,4 @@
 - **Operational Files:** `infra/nginx/ue-cloudlearn.conf`, `infra/pm2/ecosystem.config.cjs`, `infra/scripts/{ec2-bootstrap,deploy,verify-live}.sh`, `infra/aws-architecture-checklist.md`
 - **GitHub Repository:** `https://github.com/rocumen/UE-Cloudlearn`
 - **Live Verification:** `verify-live.sh` -> `ALL LIVE CHECKS PASSED.` (`PM2 online`, `Nginx active`, `db: connected`, `HTTP 200`, `IMDSv2 ue-cloudlearn-ec2-role`)
-- **Console Screenshots (`docs/screenshots/`):** `aws-08-ec2-instance.png`, `aws-09-ec2-security.png`
+- **Console & GitHub Screenshots (`docs/screenshots/`):** `aws-08-ec2-instance.png`, `aws-09-ec2-security.png`, `github-01-repo-structure.png`, `github-02-commits.png`
